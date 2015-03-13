@@ -16,6 +16,11 @@
     <properties>
         <appengine-api.version>1.9.17a</appengine-api.version>
         <logback.version>1.1.2</logback.version>
+
+        <!-- maven-compiler-plugin config -->
+        <maven.compiler.source>7</maven.compiler.source>
+        <maven.compiler.target>7</maven.compiler.target>
+
     </properties>
 
     <dependencies>

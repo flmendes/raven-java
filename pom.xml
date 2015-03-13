@@ -10,7 +10,7 @@
 
     <groupId>net.kencochrane.raven</groupId>
     <artifactId>raven-all</artifactId>
-    <version>6.0.1-SNAPSHOT</version>
+    <version>6.0.1-20150311-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Raven-Java</name>
@@ -64,7 +64,7 @@
 
     <modules>
         <module>raven</module>
-        <module>raven-appengine</module>
+        <!--<module>raven-appengine</module>-->
         <module>raven-log4j</module>
         <module>raven-logback</module>
         <module>raven-log4j2</module>
@@ -102,8 +102,8 @@
         <github.global.server>github</github.global.server>
 
         <!-- maven-compiler-plugin config -->
-        <maven.compiler.source>7</maven.compiler.source>
-        <maven.compiler.target>7</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
 
         <!-- dependencies versions -->
         <slf4j.version>1.7.9</slf4j.version>
@@ -247,9 +247,13 @@
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.eclipse.jetty</groupId>
+                    <!--<groupId>org.eclipse.jetty</groupId>-->
+                    <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                    <!--<version>9.3.0.M1</version>-->
+
+                    <groupId>org.mortbay.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
-                    <version>9.3.0.M1</version>
+                    <version>8.0.0.M0</version>
                     <configuration>
                         <scanIntervalSeconds>10</scanIntervalSeconds>
                         <stopKey>foo</stopKey>
